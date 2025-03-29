@@ -9,5 +9,5 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  title = 'Standalone Contact Manager';
+  title = 'Contact Manager';
 }

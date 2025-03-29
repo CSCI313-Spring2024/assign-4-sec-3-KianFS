@@ -6,7 +6,11 @@
 
   <div *ngFor="let contact of contacts" class="card mb-2">
     <div class="card-body">
-      ...
+      <h5 class="card-title">{{ contact.fName }} {{ contact.lName }}</h5>
+      <p class="card-text">
+        Phone: {{ contact.phoneNumber }}<br />
+        Email: {{ contact.email }}
+      </p>
       <button class="btn btn-sm btn-success me-2" (click)="onEdit(contact.id)">
         Edit
       </button>

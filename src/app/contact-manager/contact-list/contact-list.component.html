@@ -1,0 +1,18 @@
+<div class="container mt-4">
+  <h2>Contact List</h2>
+  <button class="btn btn-primary mb-3" [routerLink]="['/contacts/add']">
+    Add Contact
+  </button>
+
+  <div *ngFor="let contact of contacts" class="card mb-2">
+    <div class="card-body">
+      ...
+      <button class="btn btn-sm btn-success me-2" (click)="onEdit(contact.id)">
+        Edit
+      </button>
+      <button class="btn btn-sm btn-danger" (click)="onDelete(contact.id)">
+        Delete
+      </button>
+    </div>
+  </div>
+</div>
